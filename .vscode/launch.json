@@ -1,0 +1,73 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Malbec 10-25 noPriceIncluded Ratings Average",
+			"skipFiles": ["<node_internals>/**"],
+			"program": "${workspaceFolder}\\vivino.js",
+			"args": [
+				"--name=malbec",
+				"--minPrice=10",
+				"--maxPrice=25",
+				"--noPriceIncluded",
+				"--minRatings=5000",
+				"--maxRatings=100000",
+				"--minAverage=3.1",
+				"--maxAverage=4.5"
+			]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Malbec 10-25 noPriceIncluded Ratings",
+			"skipFiles": ["<node_internals>/**"],
+			"program": "${workspaceFolder}\\vivino.js",
+			"args": [
+				"--name=malbec",
+				"--minPrice=10",
+				"--maxPrice=25",
+				"--noPriceIncluded",
+				"--minRatings=50000",
+				"--maxRatings=100000"
+			]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Malbec 10-25 noPriceIncluded",
+			"skipFiles": ["<node_internals>/**"],
+			"program": "${workspaceFolder}\\vivino.js",
+			"args": ["--name=malbec", "--minPrice=10", "--maxPrice=25", "--noPriceIncluded"]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Malbec 10-25",
+			"skipFiles": ["<node_internals>/**"],
+			"program": "${workspaceFolder}\\vivino.js",
+			"args": ["--name=malbec", "--minPrice=10", "--maxPrice=25"]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Malbec US CA",
+			"skipFiles": ["<node_internals>/**"],
+			"program": "${workspaceFolder}\\vivino.js",
+			"args": ["--name=malbec", "--country=US", "--state=CA"]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Pinot Noir US NY",
+			"skipFiles": ["<node_internals>/**"],
+			"program": "${workspaceFolder}\\vivino.js",
+			"args": ["--name=Pinot Noir", "--country=US", "--state=NY"]
+		}
+	]
+}
